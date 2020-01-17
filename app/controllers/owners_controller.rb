@@ -1,3 +1,4 @@
+require "pry"
 class OwnersController < ApplicationController
 
   get '/owners' do
@@ -6,11 +7,11 @@ class OwnersController < ApplicationController
   end
 
   get '/owners/new' do 
-    erb :'/owners/new'
+    erb :"/owners/new"
   end
 
   post '/owners' do 
-    
+    binding.pry
   end
 
   get '/owners/:id/edit' do 
