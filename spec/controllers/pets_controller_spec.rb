@@ -29,8 +29,8 @@ describe "Pets Controller" do
 
 
     it "creates a new pet and associates an existing owner" do
-      @owner1 = Owner.create(:name => "Cricky")
-      @owner2 = Owner.create(:name => "Chris")
+      @owner1 = Owner.create!(:name => "Cricky")
+      @owner2 = Owner.create!(:name => "Chris")
       visit '/pets/new'
       fill_in "pet_name", :with => "Michael"
       choose(@owner1.id)
