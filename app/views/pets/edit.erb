@@ -11,11 +11,9 @@
     <%end%><br><br>
 
 
-    <h3>Edit Owner</h3>
-    <label for="">Owner's Name:</label> <input type="text" name="owner[name]" id="owner_name" ><br>
-
-    <h3>New Owner</h3>
-    <label for="">Create Owner</label>
+    <h3>Or create a new Owner</h3>
+    <label for="">Owner's Name:</label>
+     <input type="text" name="owner[name]" id="owner_name" value="<%=@pet.owner.name%>"><br><br>
 
     <input type="submit" value="Update Pet">
 </form>
